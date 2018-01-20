@@ -5,8 +5,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { QuestionListComponent } from './components/question-list/question-list.component';
-import {DataService} from "./services/data.service";
+import {DataService} from './services/data.service';
 import { QuestionComponent } from './components/question/question.component';
+import { AddQuestionComponent } from './components/add-question/add-question.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -14,10 +16,12 @@ import { QuestionComponent } from './components/question/question.component';
     AppComponent,
     NavbarComponent,
     QuestionListComponent,
-    QuestionComponent
+    QuestionComponent,
+    AddQuestionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

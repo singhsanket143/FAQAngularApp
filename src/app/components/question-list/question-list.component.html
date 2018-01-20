@@ -1,2 +1,2 @@
-<!--<app-question *ngFor="let question of questions" [question]="question"></app-question>-->
+<app-add-question (questionAdded)="addQuestion($event)"></app-add-question> <hr>
 <app-question *ngFor="let question of questions" [question]="question"></app-question>
